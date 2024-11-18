@@ -3,7 +3,6 @@ docker pull ji4a/vestacp
 
 docker run -d --restart=always \
   -p 3322:22 -p 80:80 -p 443:443 -p 8083:8083 \
-  -v /opt/vestacp/vesta:/vesta -v /opt/vestacp/home:/home -v /opt/vestacp/backup:/backup \
   --name vesta-CP \
   ji4a/vestacp
 
