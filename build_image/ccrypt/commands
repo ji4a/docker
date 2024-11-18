@@ -1,4 +1,5 @@
 ##### EXAMPLE CCRYPT BUILD #####
+docker image ls
 
 docker build -t myccrypt:latest .
 docker run -it --name ccrypt myccrypt bash
