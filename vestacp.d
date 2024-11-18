@@ -4,12 +4,12 @@ docker pull ji4a/vestacp
 docker run -d --restart=always \
   -p 3322:22 -p 80:80 -p 443:443 -p 8083:8083 \
   -v /opt/vestacp/vesta:/vesta -v /opt/vestacp/home:/home -v /opt/vestacp/backup:/backup \
-  --name vesta-C7 \
+  --name vesta-CP \
   ji4a/vestacp
 
 sleep 22
 
-sudo docker exec vesta-C7 /usr/local/vesta/bin/v-change-user-password admin Money22
-sudo docker exec vesta-C7 sh -c "echo 'FILEMANAGER_KEY=ILOVEREO' >> /usr/local/vesta/conf/vesta.conf"
+sudo docker exec vesta-CP /usr/local/vesta/bin/v-change-user-password admin Money22
+sudo docker exec vesta-CP sh -c "echo 'FILEMANAGER_KEY=ILOVEREO' >> /usr/local/vesta/conf/vesta.conf"
 
 echo "VestaCP is now installed, activated, and configured with the custom FILEMANAGER_KEY."
