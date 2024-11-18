@@ -1,0 +1,34 @@
+version: "3.8"
+
+services:
+  n1:
+    build: .
+    ports:
+      - "8081:80"
+    deploy:
+      replicas: 1
+    container_name: NGINX_NODE_N1
+
+  n2:
+    build: .
+    ports:
+      - "8082:80"
+    deploy:
+      replicas: 1
+    container_name: NGINX_NODE_N2
+
+  n3:
+    build: .
+    ports:
+      - "8083:80"
+    deploy:
+      replicas: 1
+    container_name: NGINX_NODE_N3
+
+  n4:
+    build: .
+    ports:
+      - "8084:80"
+    deploy:
+      replicas: 1
+    container_name: NGINX_NODE_N4
