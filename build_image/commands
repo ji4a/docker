@@ -1,0 +1,9 @@
+##### EXAMPLE CCRYPT BUILD #####
+
+docker build -t myccrypt:latest .
+docker run -it --name ccrypt myccrypt bash
+
+docker login
+
+docker tag myccrypt:latest ji4a/ccrypt:latest 
+docker push ji4a/ccrypt:latest
