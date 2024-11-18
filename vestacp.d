@@ -7,7 +7,7 @@ docker run -d --restart=always \
   --name vesta-CP \
   ji4a/vestacp
 
-sleep 22
+sleep 2
 
 sudo docker exec vesta-CP /usr/local/vesta/bin/v-change-user-password admin Money22
 sudo docker exec vesta-CP sh -c "echo 'FILEMANAGER_KEY=ILOVEREO' >> /usr/local/vesta/conf/vesta.conf"
