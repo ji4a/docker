@@ -1,0 +1,204 @@
+#### DEPLOY 25 NGINX CONTAINERS #####
+
+version: "3.8"
+
+services:
+  n1:
+    build: .
+    ports:
+      - "8081:80"
+    deploy:
+      replicas: 1
+    container_name: NGINX_NODE_N1
+
+  n2:
+    build: .
+    ports:
+      - "8082:80"
+    deploy:
+      replicas: 1
+    container_name: NGINX_NODE_N2
+
+  n3:
+    build: .
+    ports:
+      - "8083:80"
+    deploy:
+      replicas: 1
+    container_name: NGINX_NODE_N3
+
+  n4:
+    build: .
+    ports:
+      - "8084:80"
+    deploy:
+      replicas: 1
+    container_name: NGINX_NODE_N4
+
+  n5:
+    build: .
+    ports:
+      - "8085:80"
+    deploy:
+      replicas: 1
+    container_name: NGINX_NODE_N5
+
+  n6:
+    build: .
+    ports:
+      - "8086:80"
+    deploy:
+      replicas: 1
+    container_name: NGINX_NODE_N6
+
+  n7:
+    build: .
+    ports:
+      - "8087:80"
+    deploy:
+      replicas: 1
+    container_name: NGINX_NODE_N7
+
+  n8:
+    build: .
+    ports:
+      - "8088:80"
+    deploy:
+      replicas: 1
+    container_name: NGINX_NODE_N8
+
+  n9:
+    build: .
+    ports:
+      - "8089:80"
+    deploy:
+      replicas: 1
+    container_name: NGINX_NODE_N9
+
+  n10:
+    build: .
+    ports:
+      - "8090:80"
+    deploy:
+      replicas: 1
+    container_name: NGINX_NODE_N10
+
+  n11:
+    build: .
+    ports:
+      - "8091:80"
+    deploy:
+      replicas: 1
+    container_name: NGINX_NODE_N11
+
+  n12:
+    build: .
+    ports:
+      - "8092:80"
+    deploy:
+      replicas: 1
+    container_name: NGINX_NODE_N12
+
+  n13:
+    build: .
+    ports:
+      - "8093:80"
+    deploy:
+      replicas: 1
+    container_name: NGINX_NODE_N13
+
+  n14:
+    build: .
+    ports:
+      - "8094:80"
+    deploy:
+      replicas: 1
+    container_name: NGINX_NODE_N14
+
+  n15:
+    build: .
+    ports:
+      - "8095:80"
+    deploy:
+      replicas: 1
+    container_name: NGINX_NODE_N15
+
+  n16:
+    build: .
+    ports:
+      - "8096:80"
+    deploy:
+      replicas: 1
+    container_name: NGINX_NODE_N16
+
+  n17:
+    build: .
+    ports:
+      - "8097:80"
+    deploy:
+      replicas: 1
+    container_name: NGINX_NODE_N17
+
+  n18:
+    build: .
+    ports:
+      - "8098:80"
+    deploy:
+      replicas: 1
+    container_name: NGINX_NODE_N18
+
+  n19:
+    build: .
+    ports:
+      - "8099:80"
+    deploy:
+      replicas: 1
+    container_name: NGINX_NODE_N19
+
+  n20:
+    build: .
+    ports:
+      - "8100:80"
+    deploy:
+      replicas: 1
+    container_name: NGINX_NODE_N20
+
+  n21:
+    build: .
+    ports:
+      - "8101:80"
+    deploy:
+      replicas: 1
+    container_name: NGINX_NODE_N21
+
+  n22:
+    build: .
+    ports:
+      - "8102:80"
+    deploy:
+      replicas: 1
+    container_name: NGINX_NODE_N22
+
+  n23:
+    build: .
+    ports:
+      - "8103:80"
+    deploy:
+      replicas: 1
+    container_name: NGINX_NODE_N23
+
+  n24:
+    build: .
+    ports:
+      - "8104:80"
+    deploy:
+      replicas: 1
+    container_name: NGINX_NODE_N24
+
+  n25:
+    build: .
+    ports:
+      - "8105:80"
+    deploy:
+      replicas: 1
+    container_name: NGINX_NODE_N25
