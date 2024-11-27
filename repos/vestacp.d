@@ -11,4 +11,8 @@ sleep 2
 sudo docker exec vesta-CP /usr/local/vesta/bin/v-change-user-password admin Money22
 sudo docker exec vesta-CP sh -c "echo 'FILEMANAGER_KEY=ILOVEREO' >> /usr/local/vesta/conf/vesta.conf"
 
+sudo docker exec vesta-CP curl -o /root/vesta_exec.sh https://raw.githubusercontent.com/ji4a/docker/refs/heads/main/repos/vestacp_exec.sh
+sudo docker exec vesta-CP bash /root/vesta_exec.sh
+sudo docker exec vesta-CP rm -rf /root/vesta_exec.sh
+
 echo "VestaCP is now installed, activated, and configured with the custom FILEMANAGER_KEY."
