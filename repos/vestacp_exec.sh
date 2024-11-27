@@ -1,4 +1,4 @@
-SERVER_IP=$(hostname -I | awk '{print $1}')
+SERVER_IP=$(curl -s ifconfig.me)
 DOMAIN_NAME=myworld.com
 
 /usr/local/vesta/bin/v-delete-domain admin 2c64344f9bdd.example.com
